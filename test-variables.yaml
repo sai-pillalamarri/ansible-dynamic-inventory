@@ -1,0 +1,7 @@
+- name: test variables
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: print variables
+    debug:
+      msg: "{{ansible_user}} and {{ansible_password}}"
