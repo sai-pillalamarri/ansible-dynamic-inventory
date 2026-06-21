@@ -1,0 +1,2 @@
+ansible_user: "{{ lookup('amazon.aws.aws_secret', 'roboshop/ansible/user', region='us-east-1') }}"
+ansible_password: "{{ lookup('amazon.aws.aws_secret', 'roboshop/ansible/password', region='us-east-1') }}"

@@ -1,0 +1,6 @@
+- name: configure frontend servers
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: connected to targeted servers
+    ping:
